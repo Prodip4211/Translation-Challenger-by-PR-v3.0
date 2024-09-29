@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Translation Challenger by PR</title>
+</head>
+<body>
+    <div id="game-interface">
+        <h1>Translation Challenger by PR</h1>
+        <h2>App Developer: Prodip Roy</h2>
+        <button id="start-game">খেলা শুরু করুন</button>
+        <button id="settings">সেটিংস</button>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>সেটিংস</h2>
+            <label for="question-time">প্রতিটি প্রশ্নের সময় (সেকেন্ড): </label>
+            <input type="number" id="question-time" value="5"><br><br>
+
+            <label for="dark-mode">ডার্ক মোড: </label>
+            <input type="checkbox" id="dark-mode"><br><br>
+
+            <label for="total-questions">প্রশ্ন সংখ্যা: </label>
+            <input type="number" id="total-questions" value="10"><br><br>
+
+            <label for="points-correct">সঠিক উত্তরের জন্য পয়েন্ট: </label>
+            <input type="number" id="points-correct" value="2"><br><br>
+
+            <label for="points-wrong">ভুল উত্তরের জন্য পয়েন্ট: </label>
+            <input type="number" id="points-wrong" value="1"><br><br>
+
+            <button id="save-settings">সংরক্ষণ করুন</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
